@@ -1,0 +1,124 @@
+@import "../css/index.css";
+
+.Psection1{
+    background: linear-gradient(rgb(234, 230, 255), rgb(255, 255, 255)) no-repeat;
+    color: rgb(9, 30, 66);
+    scroll-margin-top: 72px;
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.custom_list{
+    list-style: none;
+}
+.custom_list li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.custom_list li::before{
+    content: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.73534 4.3223C1.36105 3.91618 0.728414 3.89038 0.3223 4.26467C-0.0838134 4.63895 -0.109615 5.27159 0.264671 5.6777L3.87678 9.59697C4.41431 10.1231 5.21446 10.1231 5.71114 9.62638C5.7724 9.56623 5.7724 9.56623 6.07539 9.26827C6.36994 8.97855 6.69814 8.65556 7.05157 8.3075C8.06144 7.31303 9.07132 6.31689 10.014 5.38477L10.0543 5.34489C11.7291 3.68869 13.0004 2.42365 13.712 1.70223C14.0998 1.30904 14.0954 0.675886 13.7022 0.288053C13.309 -0.0997796 12.6759 -0.0954305 12.2881 0.297767C11.5843 1.01131 10.3169 2.27244 8.648 3.92281L8.60773 3.96263C7.66616 4.89368 6.65722 5.88889 5.64826 6.88247C5.35784 7.16847 5.08449 7.43752 4.83288 7.68506L1.73534 4.3223Z' fill='%2336b37e'/%3E%3C/svg%3E%0A");
+    color: green;
+    position: absolute;
+    left: 0;
+}
+
+/*------------------scrol---------------------------*/
+.highlight{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    background: white;
+    transition: box-shadow 0.6s ease-in-out ;
+}
+/*---------------------------------------------------------*/
+
+
+/*style collapse---------------------------------------------------------*/
+.collapsible {
+
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    display: none;
+    overflow: hidden;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    float: left;
+    color: black;
+}
+
+.collapsible.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: black;
+}
+/*---------------------------------------------------------*/
+.custom_table td{
+    padding-left: 20px;
+    display: flex;
+}
+
+.custom_table td::before{
+    content: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.73534 4.3223C1.36105 3.91618 0.728414 3.89038 0.3223 4.26467C-0.0838134 4.63895 -0.109615 5.27159 0.264671 5.6777L3.87678 9.59697C4.41431 10.1231 5.21446 10.1231 5.71114 9.62638C5.7724 9.56623 5.7724 9.56623 6.07539 9.26827C6.36994 8.97855 6.69814 8.65556 7.05157 8.3075C8.06144 7.31303 9.07132 6.31689 10.014 5.38477L10.0543 5.34489C11.7291 3.68869 13.0004 2.42365 13.712 1.70223C14.0998 1.30904 14.0954 0.675886 13.7022 0.288053C13.309 -0.0997796 12.6759 -0.0954305 12.2881 0.297767C11.5843 1.01131 10.3169 2.27244 8.648 3.92281L8.60773 3.96263C7.66616 4.89368 6.65722 5.88889 5.64826 6.88247C5.35784 7.16847 5.08449 7.43752 4.83288 7.68506L1.73534 4.3223Z' fill='%2336b37e'/%3E%3C/svg%3E%0A");
+    color: green;
+}
+
+
+/*---------------------------------------------------------*/
+.backgroundsection5{
+    background: linear-gradient(rgb(230, 252, 255), rgb(255, 255, 255)) no-repeat;
+    color: rgb(9, 30, 66);
+    scroll-margin-top: 72px;
+}
+
+ul{
+    list-style-type: disc;
+}
+/*--------------------------------------------colapse11-------------------------*/
+.collapsible11 {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content11 {
+    display: none;
+    overflow: hidden;
+
+}
+
+.collapsible11:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    float:left;
+    color: black;
+}
+
+.collapsible11.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: black;
+
+
+
+
+}
+
+

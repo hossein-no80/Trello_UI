@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Charlie Text Thin";
+    src: url("../fonts/f9e6ca544526a9029d1e37bff0c6e667.eot");
+    src: url("../fonts/f9e6ca544526a9029d1e37bff0c6e667.eot") format("embedded-opentype"),
+    url("../fonts/f9e6ca544526a9029d1e37bff0c6e667.woff2") format("woff2"),
+    url("../fonts/f9e6ca544526a9029d1e37bff0c6e667.woff") format("woff"),
+    url("../fonts/f9e6ca544526a9029d1e37bff0c6e667.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.svg#Charlie Text Thin") format("svg");
+}
+
+* {
+    font-family: "Charlie Text Thin", sans-serif;
+}
+
+
+.menu-button.active {
+    color: #0065FF;
+}
+
+.menu-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.menu-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #0065FF;
+    transition: width 0.3s ease;
+}
+
+.menu-button.active::before {
+    width: 100%;
+}
+
+.menu-button:focus {
+    outline: none;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+.burger {
+    display: block;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #0b0101;
+    margin: 5px;
+}
+
+.nav-links {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-100vh);
+    transition: All 0.4s linear;
+
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+.nav-active {
+    transform: translateY(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.overflowh {
+    overflow: hidden;
+}
+
+/*========================================================================*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 9, 74, 0.5);
+    display: none;
+    z-index: 10; /* Ensure it covers the menus but is below any content that should be above */
+}
+
+.menu-content {
+    display: none; /* Hidden by default */
+    z-index: 20; /* Ensure it is above the overlay */
+    position: fixed;
+}
+
+.menu-content.show {
+    display: block; /* Show when the 'show' class is added */
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.shadow11.active {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.shadows.active {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/* منوهای مخفی */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 93vh;
+    background-color: #fff;
+    color: black;
+    transition: right 0.4s;
+}
+
+/* کلاس برای نمایش منو */
+.side-menu.open {
+    right: 0;
+
+}
+
+.logoh {
+    display: none;
+}
+
+
+.backgroundslid {
+    background: url(https://images.ctfassets.net/rz1oowkt5gyp/7lTGeXbBRNRLaVk2MdBjtJ/99c266ed4cb8cc63bd0c388071f01ff6/white-wave-bg.svg) center bottom -0.5px / 100% 14% no-repeat padding-box border-box, linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0 0 / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    background-blend-mode: normal, normal;
+    color: rgb(255, 255, 255);
+}
+
+.slide-btn {
+    padding: 16px;
+}
+
+.slide-btn.active {
+    background-color: white;
+    box-shadow: 0 15px 20px -4px rgb(0 0 0 / 0.2);
+    margin: 0 1rem;
+    border-radius: 0.375rem /* 6px */;
+    border-left-width: 8px;
+    border-color: rgb(56 189 248);
+    cursor: pointer;
+    padding: 1rem 24px;
+    color: black;
+}
+
+.bgmain3 {
+    background: url(https://images.ctfassets.net/rz1oowkt5gyp/7KgS3XVF…c245db9cb7910247d/ViewsBackground_Left_Narrow.svg) left center / contain no-repeat scroll padding-box border-box, url(https://images.ctfassets.net/rz1oowkt5gyp/2HisRmbo…2cf3cc537bd4d9c1/ViewsBackground_Right_Narrow.svg) right center / contain no-repeat scroll padding-box border-box, linear-gradient(240deg, rgb(0, 184, 217), rgb(0, 101, 255)) 0% 0% / auto repeat scroll padding-box border-box rgb(0, 101, 255);
+    background-blend-mode: normal, normal, normal;
+    color: rgb(255, 255, 255);
+}
+
+.main6bg {
+    background: linear-gradient(60deg, rgb(101, 84, 192), rgb(249, 156, 219)) 0 0 / auto repeat scroll padding-box border-box rgb(101, 84, 192);
+}
+
+.main6bg2 {
+    background-image: url("../img/download.svg");
+    background-repeat: no-repeat;
+}
+
+
+/*style 6 main*/
+.slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .slick-initialized .slick-slide {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000;
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    line-height: 25px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 1rem;
+
+}
+
+.navigation__arrows, .navigations__dots {
+    position: relative;
+    padding: 1rem;
+    min-width: 10%;
+    border-radius: 2rem;
+}
+
+.navigation__arrows .slick-prev {
+    left: 1rem;
+}
+
+.navigation__arrows .slick-next {
+    right: 1rem;
+}
+
+.navigations__dots .slick-dots {
+    position: initial;
+}
+
+.bgmain8 {
+    background: linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+    color: white;;
+}
+
+
+.scrolled {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------scrol---------------------------*/
+.highlight{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    background: white;
+    transition: box-shadow 0.6s ease-in-out , background-color 0.6s ease-in-out;
+}
+/*---------------------------------------------------------*/
